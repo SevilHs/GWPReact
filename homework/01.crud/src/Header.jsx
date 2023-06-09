@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
         <button onClick={()=> navigate('/')}>Movies</button>
-        <button onClick={()=> navigate('/addedit/id:')}>Add Movie</button>
+        <button onClick={()=> navigate('/addedit/0')}>Add Movie</button>
     </>
   )
 }

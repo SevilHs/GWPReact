@@ -14,14 +14,17 @@ const Form = () => {
     })
 
     const {id}=useParams()
-    if({id}){
+    let check=id
+    // console.log(check);
+    if(check!=0){
         const editData= async()=>{
             let res=await axios(`${BASE_URL}/${id}`)
             let editData= res.data
             console.log(editData);
         }  
         editData()
-        
+    }else{
+        console.log("hi");
     }
 
     const handleSubmit = async (e) => {
